@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .contenedor {
+        width: 80%;
+        height: 500px;
+        margin: 0 auto;
+        border: 1px solid red;
+        position: relative;
+      }
+
+      .contenido {
+        width: 100px;
+        height: 100px;
+        border: 1px solid blue;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+      }
+
+      #p {
+        background-color: royalblue;
+      }
+      .contenedor .contenido {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="contenido" id="p"></div>
+    </div>
+  </body>
+</html>

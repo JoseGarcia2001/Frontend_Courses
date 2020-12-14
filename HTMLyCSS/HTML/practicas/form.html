@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULARIO</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Happy Form :D</h1>
+    <form action="">
+      <label for="name">
+        <span>Name</span>
+        <input type="text" name="name" id="name" autocomplete="name" required />
+      </label>
+
+      <label for="email">
+        <span>Email</span>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="email"
+          required
+        />
+      </label>
+
+      <label for="country">
+        <span>Country</span>
+        <input
+          type="text"
+          id="country"
+          name="country"
+          autocomplete="country"
+          required
+        />
+      </label>
+
+      <label for="cd">
+        <span>Postal Code</span>
+        <input
+          type="text"
+          id="cd"
+          name="pc"
+          autocomplete="postal-code"
+          required
+        />
+      </label>
+
+      <input type="submit" value="Send" />
+    </form>
+  </body>
+</html>
