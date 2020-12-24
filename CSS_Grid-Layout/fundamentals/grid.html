@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        /* grid-template-rows: 200px 200px;
+        grid-template-columns: 1fr 1fr; */
+        /* grid-template: filas / columnas; */
+        grid-template: 200px 200px / 1fr 1fr;
+        gap: 10px;
+      }
+
+      .grid-item {
+        border: 1px solid red;
+        padding: 5px;
+      }
+
+      .grid-item:nth-of-type(4) {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">Contenido #1</div>
+      <div class="grid-item">Contenido #2</div>
+      <div class="grid-item">Contenido #3</div>
+      <div class="grid-item">Contenido #4</div>
+      <div class="grid-item">Contenido #5</div>
+      <div class="grid-item">Contenido #6</div>
+      <div class="grid-item">Contenido #7</div>
+    </div>
+  </body>
+</html>
