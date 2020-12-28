@@ -13,20 +13,23 @@ body {
   color: white;
   padding: 32px 15px;
   display: grid;
+  width: 100%;
+  max-height: 90vh;
   grid-template-columns: minmax(auto, 1024px);
   justify-content: center;
 }
 
 .hero-container {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 320px;
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  padding: 0 10px;
 }
 
 .course-title {
-  grid-column: 1 / 2;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 30px;
 }
@@ -48,6 +51,7 @@ form {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   padding: 1.5em;
+  height: 260px;
   grid-column: 2 / 3;
   grid-row: 1 / 4;
 }
@@ -83,6 +87,13 @@ form button {
   display: inline-block;
 }
 
+.countdown {
+  /* align-self: center; */
+  /* justify-self: center; */
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
 .countdown p {
   font-size: 20px;
   text-align: center;
@@ -101,4 +112,30 @@ form button {
 
 .countdown span:last-child::after {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .course-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+
+  .course-details {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+
+  form {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+
+  .countdown {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+  }
 }
