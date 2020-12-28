@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .post-section {
+        margin: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(105px, 293px));
+        justify-content: center;
+        gap: 28px;
+      }
+
+      .post {
+        position: relative;
+        cursor: pointer;
+      }
+
+      .post-image img {
+        width: 100%;
+        vertical-align: top;
+      }
+
+      .post-overlay {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-weight: bold;
+        color: white;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.4);
+      }
+
+      .post-overlay p {
+        margin: 8px;
+      }
+
+      .post:hover .post-overlay {
+        display: flex;
+      }
+
+      .post-details__reactions span {
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        background-image: url("./assets/icons8-heart-24.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 6px;
+        vertical-align: middle;
+      }
+
+      .post-details__comments span {
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        background-image: url("./assets/icons8-speech-24.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 6px;
+        vertical-align: middle;
+      }
+
+      @media screen and (max-width: 768px) {
+        .post-section {
+          gap: 3px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="post-section">
+      <div class="post">
+        <div class="post-overlay">
+          <p class="post-details__reactions"><span></span>49</p>
+          <p class="post-details__comments"><span></span>212</p>
+        </div>
+        <figure class="post-image">
+          <img src="./assets/pexels-nadezhda-diskant-5878866.jpg" alt="image" />
+        </figure>
+      </div>
+      <div class="post">
+        <div class="post-overlay">
+          <p class="post-details__reactions"><span></span>49</p>
+          <p class="post-details__comments"><span></span>212</p>
+        </div>
+        <figure class="post-image">
+          <img src="./assets/pexels-nadezhda-diskant-5878866.jpg" alt="image" />
+        </figure>
+      </div>
+      <div class="post">
+        <div class="post-overlay">
+          <p class="post-details__reactions"><span></span>49</p>
+          <p class="post-details__comments"><span></span>212</p>
+        </div>
+        <figure class="post-image">
+          <img src="./assets/pexels-nadezhda-diskant-5878866.jpg" alt="image" />
+        </figure>
+      </div>
+      <div class="post">
+        <div class="post-overlay">
+          <p class="post-details__reactions"><span></span>49</p>
+          <p class="post-details__comments"><span></span>212</p>
+        </div>
+        <figure class="post-image">
+          <img src="./assets/pexels-nadezhda-diskant-5878866.jpg" alt="image" />
+        </figure>
+      </div>
+      <div class="post">
+        <div class="post-overlay">
+          <p class="post-details__reactions"><span></span>49</p>
+          <p class="post-details__comments"><span></span>212</p>
+        </div>
+        <figure class="post-image">
+          <img src="./assets/pexels-nadezhda-diskant-5878866.jpg" alt="image" />
+        </figure>
+      </div>
+      <div class="post">
+        <div class="post-overlay">
+          <p class="post-details__reactions"><span></span>49</p>
+          <p class="post-details__comments"><span></span>212</p>
+        </div>
+        <figure class="post-image">
+          <img src="./assets/pexels-nadezhda-diskant-5878866.jpg" alt="image" />
+        </figure>
+      </div>
+      <div class="post">
+        <div class="post-overlay">
+          <p class="post-details__reactions"><span></span>49</p>
+          <p class="post-details__comments"><span></span>212</p>
+        </div>
+        <figure class="post-image">
+          <img src="./assets/pexels-nadezhda-diskant-5878866.jpg" alt="image" />
+        </figure>
+      </div>
+      <div class="post">
+        <div class="post-overlay">
+          <p class="post-details__reactions"><span></span>49</p>
+          <p class="post-details__comments"><span></span>212</p>
+        </div>
+        <figure class="post-image">
+          <img src="./assets/pexels-nadezhda-diskant-5878866.jpg" alt="image" />
+        </figure>
+      </div>
+      <div class="post">
+        <div class="post-overlay">
+          <p class="post-details__reactions"><span></span>49</p>
+          <p class="post-details__comments"><span></span>212</p>
+        </div>
+        <figure class="post-image">
+          <img src="./assets/pexels-nadezhda-diskant-5878866.jpg" alt="image" />
+        </figure>
+      </div>
+      <div class="post">
+        <div class="post-overlay">
+          <p class="post-details__reactions"><span></span>49</p>
+          <p class="post-details__comments"><span></span>212</p>
+        </div>
+        <figure class="post-image">
+          <img src="./assets/pexels-nadezhda-diskant-5878866.jpg" alt="image" />
+        </figure>
+      </div>
+      <div class="post">
+        <div class="post-overlay">
+          <p class="post-details__reactions"><span></span>49</p>
+          <p class="post-details__comments"><span></span>212</p>
+        </div>
+        <figure class="post-image">
+          <img src="./assets/pexels-nadezhda-diskant-5878866.jpg" alt="image" />
+        </figure>
+      </div>
+      <div class="post">
+        <div class="post-overlay">
+          <p class="post-details__reactions"><span></span>49</p>
+          <p class="post-details__comments"><span></span>212</p>
+        </div>
+        <figure class="post-image">
+          <img src="./assets/pexels-nadezhda-diskant-5878866.jpg" alt="image" />
+        </figure>
+      </div>
+    </section>
+  </body>
+</html>
